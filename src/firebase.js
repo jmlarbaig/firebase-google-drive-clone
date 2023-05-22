@@ -15,8 +15,8 @@ const app = firebase.initializeApp({
 
 const firestore = app.firestore()
 export const database = {
-  folders: firestore.collection("folders"),
-  files: firestore.collection("files"),
+  folders: firestore.collection("events"),
+  files: firestore.collection("scorecards"),
   formatDoc: doc => {
     return { id: doc.id, ...doc.data() }
   },
