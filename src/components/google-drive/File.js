@@ -8,8 +8,9 @@ export default function File({ file }) {
       href={file.url}
       className="btn btn-outline-dark text-truncate w-100"
     >
-      <FontAwesomeIcon icon={faFile} className="mr-2" />
-      {file.name}
+      <img src={file.url} width={'250px'} height={'auto'} className="" alt="logo" />
+      {/* <FontAwesomeIcon icon={faFile} className="mr-2" /> */}
+      {/* {file.name} */}
     </a>
   )
 }
