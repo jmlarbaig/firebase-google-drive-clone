@@ -20,8 +20,8 @@ export default function Dashboard() {
       <Container fluid>
         <div className="d-flex align-items-center">
           <FolderBreadcrumbs currentFolder={folder} />
-          <AddFileButton currentFolder={folder} />
-          <AddFolderButton currentFolder={folder} />
+          {/* <AddFileButton currentFolder={folder} />
+          <AddFolderButton currentFolder={folder} /> */}
         </div>
         {childFolders.length > 0 && (
           <div className="d-flex flex-wrap">
@@ -42,7 +42,7 @@ export default function Dashboard() {
             {childFiles.map(childFile => (
               <div
                 key={childFile.id}
-                style={{ maxWidth: "250px" }}
+                style={{ maxWidth: "500px" }}
                 className="p-2"
               >
                 <File file={childFile} />
